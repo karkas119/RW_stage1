@@ -14,13 +14,12 @@ class MovieList extends Component {
         super();
         this.state = {
             movies: MoviesData,
-            link: 'https://image.tmdb.org/t/p/w500'+ link,
-        };
+           };
     }
     render() {
         return (
             <div className='container'>
-                <MovieShow movies = {this.state.movies} link = {this.state.link}  />
+                <MovieShow movies = {this.state.movies} />
             </div>
         );
     }
